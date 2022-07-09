@@ -8,5 +8,5 @@ task:
     - ./build
   container:
     cpu: 4
-    image: "panchajanya1999/archlinux:latest"
+    image: "ubuntu:latest"
     memory: 4G
