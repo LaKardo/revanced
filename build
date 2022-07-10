@@ -1,6 +1,6 @@
 apt update -y
 
-apt install -y wget curl zip
+apt install -y wget curl xz-utils
 
 wget https://cdn.azul.com/zulu/bin/zulu17.34.19-ca-jdk17.0.3-linux_amd64.deb
 
