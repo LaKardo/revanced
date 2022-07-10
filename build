@@ -6,16 +6,21 @@ wget https://cdn.azul.com/zulu/bin/zulu17.34.19-ca-jdk17.0.3-linux_amd64.deb
 
 apt install -y ./zulu17.34.19-ca-jdk17.0.3-linux_amd64.deb
 
-java -jar revanced-cli-all.jar \
- -a some.apk \
+mkdir revanced && cd revanced
+
+wget -c -O revanced-cli.jar https://github.com/revanced/revanced-cli/releases/download/v2.3.3/revanced-cli-2.3.3-all.jar
+
+wget -c -O revanced-patches.jar https://github.com/revanced/revanced-patches/releases/download/v2.11.0/revanced-patches-2.11.0.jar
+
+wget -c -O integrations.apk https://github.com/revanced/revanced-integrations/releases/download/v0.21.9/app-release-unsigned.apk
+
+wget -c -O youtube.apk https://trashbox.ru/files20/1660227_70b52e/com.google.android.youtube_17.25.34_1530123712.apk
+
+java -jar revanced-cli.jar \
+ -a youtube.apk \
  -c \
  -o revanced.apk \
  -b revanced-patches.jar \
+ -m integrations.apk \
  -e microg-support \
  --mount
- 
- 
- 
- 
- 
- 
