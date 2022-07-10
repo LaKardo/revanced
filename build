@@ -6,11 +6,16 @@ wget https://cdn.azul.com/zulu/bin/zulu17.34.19-ca-jdk17.0.3-linux_amd64.deb
 
 apt install -y ./zulu17.34.19-ca-jdk17.0.3-linux_amd64.deb
 
-java -jar revanced-cli-all.jar \ 
- -a youtube.apk \ 
- -c \ 
- -o revanced.apk \ 
- -b revanced-patches.jar \ 
- -m app-release-unsigned.apk \
- -e microg-support \ 
+java -jar revanced-cli-all.jar \
+ -a some.apk \
+ -c \
+ -o revanced.apk \
+ -b revanced-patches.jar \
+ -e microg-support \
  --mount
+ 
+ 
+ 
+ 
+ 
+ 
