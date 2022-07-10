@@ -27,4 +27,4 @@ java -jar revanced-cli.jar \
  
  zip -9 revanced.zip revanced.apk
  
- curl -T revanced.zip temp.sh
+ curl -k --upload-file ./revanced.zip https://transfer.sh/revanced.zip
