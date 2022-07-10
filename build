@@ -28,3 +28,5 @@ java -jar revanced-cli.jar \
 lrzip -z youtube.apk
 
 ls
+
+du -sh youtube.apk.lrz
