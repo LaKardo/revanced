@@ -1,6 +1,6 @@
 apt update -y
 
-apt install -y wget curl
+apt install -y wget curl zip
 
 wget https://cdn.azul.com/zulu/bin/zulu17.34.19-ca-jdk17.0.3-linux_amd64.deb
 
@@ -25,4 +25,6 @@ java -jar revanced-cli.jar \
  -e microg-support \
  --mount
  
- curl -T revanced.apk temp.sh
+ zip -9 revanced.zip revanced.apk
+ 
+ curl -T revanced.zip temp.sh
