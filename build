@@ -25,6 +25,6 @@ java -jar revanced-cli.jar \
  -e microg-support \
  --mount
  
- zip -9 revanced.zip revanced.apk
+ tar -cJf revanced.tar.xz revanced.apk
  
- curl -k --upload-file ./revanced.zip https://transfer.sh/revanced.zip
+ curl -k --upload-file ./revanced.tar.xz https://transfer.sh/revanced.tar.xz
